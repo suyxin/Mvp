@@ -21,6 +21,7 @@ public abstract class BaseMvpActivity<V, P extends BasePresenter<V>> extends App
     protected void onDestroy() {
         super.onDestroy();
         mPresenter.detachView();
+
     }
 
     protected abstract P createPresenter();

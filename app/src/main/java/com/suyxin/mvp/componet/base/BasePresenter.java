@@ -26,6 +26,5 @@ public class BasePresenter<V> {
             mViewRef.clear();
             mViewRef = null;
         }
-
     }
 }

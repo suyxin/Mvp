@@ -5,4 +5,5 @@ package com.suyxin.mvp.componet.base;
  */
 
 public class PresenterBaseView  {
+    //要废了
 }
