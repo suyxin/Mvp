@@ -32,10 +32,13 @@ public abstract class BaseMvpFragment<V extends BaseMvpView,P extends BasePresen
 
         }
     }
+
+    //通过子类注解获取class信息创建
     protected  P createPresenter2(){
 
         PresenterFactory<V, P> factory = new PresenterFactoryImpl<>();
         return factory.create((V) this);
     }
+    //由子类提供创建
     protected abstract P createPresenter();
 }

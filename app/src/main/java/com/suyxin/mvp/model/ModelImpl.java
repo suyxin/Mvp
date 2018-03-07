@@ -11,8 +11,8 @@ import java.util.List;
  */
 
 
-public class ModelHelper {
-    public static   List<CardBean>  getFromModel(){
+public class ModelImpl implements IModel<List<CardBean>>{
+    public static List<CardBean>  getFromModel(){
         int[] imgResIds = {R.drawable.puke_1, R.drawable.puke_2, R.drawable.puke_3, R.drawable.puke_1,
                 R.drawable.puke_2, R.drawable.puke_3, R.drawable.puke_1, R.drawable.puke_2, R.drawable.puke_3};
         List<CardBean> list = new ArrayList<>();
@@ -21,5 +21,10 @@ public class ModelHelper {
             list.add(new CardBean(imgResIds[i], "类型名称", i + 1));
         }
         return list;
+    }
+
+    @Override
+    public List get() {
+        return getFromModel();
     }
 }

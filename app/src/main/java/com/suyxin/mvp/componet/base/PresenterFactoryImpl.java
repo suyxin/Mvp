@@ -11,7 +11,6 @@ public class PresenterFactoryImpl<V extends BaseMvpView,P extends BasePresenter<
     @Override
     public P create(V iView) {
 
-
         PresenterClass annotation = iView.getClass().getAnnotation(PresenterClass.class);
 
         if (annotation != null) {
@@ -23,7 +22,7 @@ public class PresenterFactoryImpl<V extends BaseMvpView,P extends BasePresenter<
                 e.printStackTrace();
             }
         }
-        System.out.println("找不到"+annotation);
+        System.out.println(iView.getClass().getName()+" 找不到有Presenter注解");
         return null;
     }
 }
