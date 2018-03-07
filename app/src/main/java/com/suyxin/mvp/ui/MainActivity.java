@@ -1,5 +1,6 @@
-package com.suyxin.mvp.home;
+package com.suyxin.mvp.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.suyxin.mvp.R;
@@ -13,6 +14,7 @@ public class MainActivity extends BaseMvpActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        startActivity(new Intent(this, CardSwipeActivity.class));
     }
 
     @Override

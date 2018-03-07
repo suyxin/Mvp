@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="#393F4E"
+              android:layout_gravity="center"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="200dp"
+        android:layout_height="266dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        tools:background="@color/colorPrimary"
+        android:layout_marginTop="15dp"
+        />
+    <TextView
+        android:id="@+id/tv_name"
+        android:text="这是个国色天香"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+     <Button
+         android:layout_marginTop="10dp"
+         android:id="@+id/subsiber"
+         android:text="订阅"
+         android:background="#EF4F78"
+          android:layout_gravity="center_horizontal"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_position"
+        tools:text="5/8"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="right"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
